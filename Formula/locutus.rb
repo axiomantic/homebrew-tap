@@ -1,26 +1,26 @@
 class Locutus < Formula
   desc "Message exchange and routing for software agents over Redis without a background daemon"
   homepage "https://github.com/axiomantic/locutus"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/axiomantic/locutus/releases/download/v#{version}/locutus-darwin-arm64.tar.gz"
-      sha256 "a83a8e197164401d88cbc4da914aa5eae770c82305eb330b0f1b620f09a2e30c"
+      sha256 "6de61828b4acd9847bd37ce2f5cf2c9e2e6eccc0e9edf4db406ca4e1d2afa195"
     else
       url "https://github.com/axiomantic/locutus/releases/download/v#{version}/locutus-darwin-amd64.tar.gz"
-      sha256 "a68c96430eec0567a0aad402ad168fb346494f5c8cc8b8da2d2cae07751962fd"
+      sha256 "11fd5c1590e00a3c9e48413b9d0979ef3b02d0f66717d92616e7a305a938abad"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/axiomantic/locutus/releases/download/v#{version}/locutus-linux-arm64.tar.gz"
-      sha256 "9c1aca47a2e52bd5afd65cc78406166ca7800bd1481b4f92d6a9433fd5d6b4e4"
+      sha256 "fae788534c0412b45f68ffa607476aae96f133780a5385ebf0817dd9b068bec4"
     else
       url "https://github.com/axiomantic/locutus/releases/download/v#{version}/locutus-linux-amd64.tar.gz"
-      sha256 "d3e20527ef22f526a0f56e808f0a96c873a64be4164683ceed3e26ab3d30a7fb"
+      sha256 "56fc2941c6269cea8a66e2079c3be340be0d6ddf6e008f097a0baeaf23cc42d4"
     end
   end
 
